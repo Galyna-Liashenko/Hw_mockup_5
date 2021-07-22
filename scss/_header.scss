@@ -1,0 +1,26 @@
+.header{
+    background-color: $header-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    
+    &__nav-items{
+        display: flex;
+        list-style: none;
+    } 
+
+    &__item{
+         padding-left:20px;
+    }
+
+    &__item-link{
+        text-decoration: none;
+        color:$black;
+    }
+
+    &__item-link:hover{
+        color:white;
+        transition:.5s;
+    }
+}

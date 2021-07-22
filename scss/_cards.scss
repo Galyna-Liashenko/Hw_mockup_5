@@ -1,0 +1,55 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 300px;
+        border: 2px solid $border-color;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    &__img{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 50%;
+        width: 90px;
+        box-shadow: 1px 0px 10px 5px $gray;
+    }
+    &__card-title{
+        margin: 0;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        flex-grow: 1;
+    }
+    &__card:hover{
+        background-color: $header-color;
+        transition: 1s;
+    }
+    &__card:not(:hover) {
+        transition: 3s;
+      }
+    &__go{
+        display: inline-block;
+        text-decoration: none;
+        width: 70px;
+        height: 25px;
+        margin-bottom: 10px;
+        border-radius: 25px;
+        background-color: $gray;
+        text-align: center; 
+        color:$white;
+        padding-top: 3px;
+    }
+    &__go:hover{
+        background-color: $white;
+        color: $gray;
+        transition: .5s;
+    }
+}

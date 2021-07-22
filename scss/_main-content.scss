@@ -1,0 +1,32 @@
+.main{
+    display: flex;
+    flex-grow: 1;
+    &__title{
+        text-transform: uppercase;
+    }
+    &__content{
+        display: flex;
+        flex-grow: 1;
+        padding: 0px;
+    }
+    &__sidebar--left{
+        order: -1;
+        background-color:$aside-left;
+    }
+    &__sidebar--right{
+        background-color:$aside-right;
+    }
+    &__sidebar{
+        width: 210px;
+        text-align: center;
+        margin:0;
+    }
+    &__text{
+        padding: 20px;
+        text-align: center;
+    }
+    &__text1{
+        font-weight: 400;
+    }
+    
+}
